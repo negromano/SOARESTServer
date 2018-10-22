@@ -1,5 +1,9 @@
 package estructural;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Curso {
     
     private String nombreCurso;
@@ -21,6 +25,7 @@ public class Curso {
         this.nombreCurso = nombreCurso;
     }
 
+    @XmlElement
     public String getNombreCurso() {
         return nombreCurso;
     }
@@ -29,6 +34,7 @@ public class Curso {
         this.vuelanLosPavoReales = vuelanLosPavoReales;
     }
 
+    @XmlElement
     public boolean isVuelanLosPavoReales() {
         return vuelanLosPavoReales;
     }
